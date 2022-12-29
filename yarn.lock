@@ -5,7 +5,7 @@ __metadata:
   version: 4
   cacheKey: 7
 
-"@yarnv2/client@workspace:packages/client":
+"@yarnv2/client@, @yarnv2/client@workspace:packages/client":
   version: 0.0.0-use.local
   resolution: "@yarnv2/client@workspace:packages/client"
   dependencies:
@@ -65,6 +65,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "yarnv2workspaces@workspace:."
   dependencies:
+    "@yarnv2/client": ""
     mime-types: 2.1.35
   languageName: unknown
   linkType: soft

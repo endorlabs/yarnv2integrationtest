@@ -47,6 +47,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@yarnv2/client", "workspace:packages/client"],
             ["mime-types", "npm:2.1.35"]
           ],
           "linkType": "SOFT",
@@ -124,6 +125,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["yarnv2workspaces", "workspace:."],
+            ["@yarnv2/client", "workspace:packages/client"],
             ["mime-types", "npm:2.1.35"]
           ],
           "linkType": "SOFT",

@@ -13,6 +13,7 @@
     "packages/*"
   ],
   "dependencies": {
+    "@yarnv2/client": "",
     "mime-types": "2.1.35"
   }
 }
