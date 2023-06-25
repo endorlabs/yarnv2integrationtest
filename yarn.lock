@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 4
+  version: 6
   cacheKey: 7
 
 "@yarnv2/client@, @yarnv2/client@workspace:packages/client":
@@ -28,6 +28,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lru-cache@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "lru-cache@npm:6.0.0"
+  dependencies:
+    yallist: ^4.0.0
+  checksum: 8/f97f499f898f23e4585742138a22f22526254fdba6d75d41a1c2526b3b6cc5747ef59c5612ba7375f42aca4f8461950e925ba08c991ead0651b4918b7c978297
+  languageName: node
+  linkType: hard
+
 "mime-db@npm:1.52.0":
   version: 1.52.0
   resolution: "mime-db@npm:1.52.0"
@@ -44,12 +53,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:6.0.0":
-  version: 6.0.0
-  resolution: "semver@npm:6.0.0"
+"semver@npm:7.5.2":
+  version: 7.5.2
+  resolution: "semver@npm:7.5.2"
+  dependencies:
+    lru-cache: ^6.0.0
   bin:
-    semver: ./bin/semver
-  checksum: bf3c00a8cb16edb47976391dc990f032ddc67f05229d11acc3a37fec3fa9018ef082988bd4d4c30038a1122814366955f00773ec9b1446edf67e3aad614107d4
+    semver: bin/semver.js
+  checksum: 8/3fdf5d1e6f170fe8bcc41669e31787649af91af7f54f05c71d0865bb7aa27e8b92f68b3e6b582483e2c1c648008bc84249d2cd86301771fe5cbf7621d1fe5375
   languageName: node
   linkType: hard
 
@@ -57,9 +68,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "test-539537@workspace:packages/test"
   dependencies:
-    semver: 6.0.0
+    semver: 7.5.2
   languageName: unknown
   linkType: soft
+
+"yallist@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "yallist@npm:4.0.0"
+  checksum: 8/343617202af32df2a15a3be36a5a8c0c8545208f3d3dfbc6bb7c3e3b7e8c6f8e7485432e4f3b88da3031a6e20afa7c711eded32ddfb122896ac5d914e75848d5
+  languageName: node
+  linkType: hard
 
 "yarnv2workspaces@workspace:.":
   version: 0.0.0-use.local
