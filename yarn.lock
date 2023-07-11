@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 4
+  version: 6
   cacheKey: 7
 
 "@yarnv2/client@, @yarnv2/client@workspace:packages/client":
@@ -44,12 +44,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:6.0.0":
-  version: 6.0.0
-  resolution: "semver@npm:6.0.0"
+"semver@npm:6.3.1":
+  version: 6.3.1
+  resolution: "semver@npm:6.3.1"
   bin:
-    semver: ./bin/semver
-  checksum: bf3c00a8cb16edb47976391dc990f032ddc67f05229d11acc3a37fec3fa9018ef082988bd4d4c30038a1122814366955f00773ec9b1446edf67e3aad614107d4
+    semver: bin/semver.js
+  checksum: 8/ae47d06de28836adb9d3e25f22a92943477371292d9b665fb023fae278d345d508ca1958232af086d85e0155aee22e313e100971898bbb8d5d89b8b1d4054ca2
   languageName: node
   linkType: hard
 
@@ -57,7 +57,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "test-539537@workspace:packages/test"
   dependencies:
-    semver: 6.0.0
+    semver: 6.3.1
   languageName: unknown
   linkType: soft
 
