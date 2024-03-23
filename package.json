@@ -1,5 +1,5 @@
 {
-  "name": "yarnv2workspaces",
+  "name": "jupiter",
   "version": "1.0.0",
   "private": true,
   "description": "",
@@ -13,7 +13,7 @@
     "packages/*"
   ],
   "dependencies": {
-    "@yarnv2/client": "",
+    "@yarnv2/client": "1.0.0",
     "mime-types": "2.1.35"
   }
 }

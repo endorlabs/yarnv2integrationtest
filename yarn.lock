@@ -5,12 +5,13 @@ __metadata:
   version: 4
   cacheKey: 7
 
-"@yarnv2/client@, @yarnv2/client@workspace:packages/client":
+"@yarnv2/client@1.0.0, @yarnv2/client@workspace:packages/client":
   version: 0.0.0-use.local
   resolution: "@yarnv2/client@workspace:packages/client"
   dependencies:
     color-name: ^1.0.0
     js-tokens: ^4.0.0
+    jupiter: 1.0.0
   languageName: unknown
   linkType: soft
 
@@ -27,6 +28,15 @@ __metadata:
   checksum: 1fc4e4667ac2d972aba65148b9cbf9c17566b2394d3504238d8492bbd3e68f496c657eab06b26b40b17db5cac0a34d153a12130e2d2d2bb6dc2cdc8a4764eb1b
   languageName: node
   linkType: hard
+
+"jupiter@1.0.0, jupiter@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "jupiter@workspace:."
+  dependencies:
+    "@yarnv2/client": 1.0.0
+    mime-types: 2.1.35
+  languageName: unknown
+  linkType: soft
 
 "mime-db@npm:1.52.0":
   version: 1.52.0
@@ -58,14 +68,5 @@ __metadata:
   resolution: "test-539537@workspace:packages/test"
   dependencies:
     semver: 6.0.0
-  languageName: unknown
-  linkType: soft
-
-"yarnv2workspaces@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "yarnv2workspaces@workspace:."
-  dependencies:
-    "@yarnv2/client": ""
-    mime-types: 2.1.35
   languageName: unknown
   linkType: soft

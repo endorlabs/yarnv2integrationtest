@@ -12,6 +12,7 @@
         "js-tokens": "^4.0.0"
     },
     "devDependencies": {
-        "color-name": "^1.0.0"
+        "color-name": "^1.0.0",
+        "jupiter": "1.0.0"
     }
 }

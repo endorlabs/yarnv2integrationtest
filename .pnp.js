@@ -19,7 +19,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],
     "dependencyTreeRoots": [
       {
-        "name": "yarnv2workspaces",
+        "name": "jupiter",
         "reference": "workspace:."
       },
       {
@@ -35,8 +35,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
       ["@yarnv2/client", ["workspace:packages/client"]],
-      ["test-539537", ["workspace:packages/test"]],
-      ["yarnv2workspaces", ["workspace:."]]
+      ["jupiter", ["workspace:."]],
+      ["test-539537", ["workspace:packages/test"]]
     ],
     "fallbackPool": [
     ],
@@ -59,7 +59,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@yarnv2/client", "workspace:packages/client"],
             ["color-name", "npm:1.1.4"],
-            ["js-tokens", "npm:4.0.0"]
+            ["js-tokens", "npm:4.0.0"],
+            ["jupiter", "workspace:."]
           ],
           "linkType": "SOFT",
         }]
@@ -80,6 +81,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["js-tokens", "npm:4.0.0"]
           ],
           "linkType": "HARD",
+        }]
+      ]],
+      ["jupiter", [
+        ["workspace:.", {
+          "packageLocation": "./",
+          "packageDependencies": [
+            ["jupiter", "workspace:."],
+            ["@yarnv2/client", "workspace:packages/client"],
+            ["mime-types", "npm:2.1.35"]
+          ],
+          "linkType": "SOFT",
         }]
       ]],
       ["mime-db", [
@@ -116,17 +128,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["test-539537", "workspace:packages/test"],
             ["semver", "npm:6.0.0"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
-      ["yarnv2workspaces", [
-        ["workspace:.", {
-          "packageLocation": "./",
-          "packageDependencies": [
-            ["yarnv2workspaces", "workspace:."],
-            ["@yarnv2/client", "workspace:packages/client"],
-            ["mime-types", "npm:2.1.35"]
           ],
           "linkType": "SOFT",
         }]
